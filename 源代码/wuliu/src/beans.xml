@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><beans>
+	<bean id="userDao" class="org.bs.dao.impl.UserDaoImpl"/>
+	<bean id="userService" class="org.bs.service.impl.UserServiceImpl">
+		<property name="userDao" ref="userDao"/>
+	</bean>
+	<bean id="roleDao" class="org.bs.dao.impl.RoleDaoImpl"/>
+	<bean id="roleService" class="org.bs.service.impl.RoleServiceImpl">
+	<property name="roleDao" ref="roleDao"/>
+	</bean>
+	<bean id="staffDao" class="org.bs.dao.impl.StaffDaoImpl"/>
+	<bean id="staffService" class="org.bs.service.impl.StaffServiceImpl">
+		<property name="staffDao" ref="staffDao"/>
+	</bean>
+	<bean id="memberDao" class="org.bs.dao.impl.MemberDaoImpl"/>
+	<bean id="memberService" class="org.bs.service.impl.MemberServiceImpl">
+		<property name="memberDao" ref="memberDao"/>
+	</bean>
+	<bean id="expressDao" class="org.bs.dao.impl.ExpressDaoImpl"/>
+	<bean id="expressService" class="org.bs.service.impl.ExpressServiceImpl">
+		<property name="expressDao" ref="expressDao"/>
+	</bean>
+	<bean id="carsDao" class="org.bs.dao.impl.CarsDaoImpl"/>
+	<bean id="carsService" class="org.bs.service.impl.CarsServiceImpl">
+		<property name="carsDao" ref="carsDao"/>
+	</bean>
+	<bean id="financeDao" class="org.bs.dao.impl.FinanceDaoImpl"/>
+	<bean id="financeService" class="org.bs.service.impl.FinanceServiceImpl">
+		<property name="financeDao" ref="financeDao"/>
+	</bean>
+	<bean id="messageDao" class="org.bs.dao.impl.MessageDaoImpl"/>
+	<bean id="messageService" class="org.bs.service.impl.MessageServiceImpl">
+		<property name="messageDao" ref="messageDao"/>
+	</bean>
+</beans>
